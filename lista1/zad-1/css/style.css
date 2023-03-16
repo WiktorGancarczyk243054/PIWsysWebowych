@@ -1,0 +1,51 @@
+* {
+	/* (a) */
+	font-family: sans-serif;
+	/* (i) */
+	box-sizing: border-box;
+}
+body {
+	/* (c) */
+	background-color: rgb(150, 150, 150);
+}
+div {
+	/* (b) */
+	max-width: 1024px;
+	/* (c) */
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	/* (g) */
+	padding-bottom: 1px;
+	padding-top: 1em;
+}
+
+p {
+	/* (d) */
+	margin-bottom: 2em;
+}
+
+section {
+	/* (g) */
+	padding-top: 1em;
+	/* (e) */
+	margin-bottom: 2em;
+	/* (f) */
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+/* (h) */
+h1 {
+	/* (g) */
+	margin-top: 0;
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
