@@ -13,19 +13,19 @@ function walidacja()
 	}
 	
 	var widthvalue = document.getElementById("width").value;
-	if ((widthvalue <= 0) || (widthvalue > 1000)) {
+	if ((widthvalue <= 0) || (widthvalue > 1000) || (!Number.isInteger(Number(widthvalue)))) {
 		anyfail = true;
 		document.getElementById("widthval").style.display = `block`;
 	}
 	
 	var heigthvalue = document.getElementById("heigth").value;
-	if (heigthvalue <= 0 || heigthvalue > 1000) {
+	if (heigthvalue <= 0 || heigthvalue > 1000 || (!Number.isInteger(Number(heigthvalue)))) {
 		anyfail = true;
 		document.getElementById("heigthval").style.display = `block`;
 	}
 	
 	var depthvalue = document.getElementById("depth").value;
-	if (depthvalue <= 0 || depthvalue > 1000) {
+	if (depthvalue <= 0 || depthvalue > 1000 || (!Number.isInteger(Number(depthvalue)))) {
 		anyfail = true;
 		document.getElementById("depthval").style.display = `block`;
 	}
