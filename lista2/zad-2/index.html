@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zadanie 2</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script type="text/javascript" src="script.js"></script>
+  </head>
+  <body style="background-color: #d2eaf1">
+	<main>
+		<div class="container my-5" style="background-color: white;">
+			<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+				<h1>Please enter package and dimensions</h1>
+				<form class="needs-validation" novalidate="">
+					<div class="row g-3">
+						<div class="col-12">
+							<label for="name" class="form-label">Name</label>
+							<div class="input-group has-validation">
+								<input type="text" class="form-control" id="name" placeholder="Package name" maxlength="20" required>
+								<div class="invalid-feedback" id="nameval">
+									Proszę wprowadzić nazwę o maksymalnej długości 20 znaków.
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<label for="width" class="form-label">Width</label>
+							<div class="input-group has-validation">
+								<input type="number" min="0" max="1000" step="1" class="form-control" id="width" style="-webkit-appearance: auto;" required>
+								<span class="input-group-text">cm</span>
+								<div class="invalid-feedback" id="widthval">
+									Proszę wprowadzić liczbę większą od 0, maksymalnie 1000.
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<label for="heigth" class="form-label">Heigth</label>
+							<div class="input-group has-validation">
+								<input type="number" min="0" max="1000" step="1" class="form-control" id="heigth" style="-webkit-appearance: auto;" required>
+								<span class="input-group-text">cm</span>
+								<div class="invalid-feedback" id="heigthval">
+									Proszę wprowadzić liczbę większą od 0, maksymalnie 1000.
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<label for="depth" class="form-label">Depth</label>
+							<div class="input-group has-validation">
+								<input type="number" min="0" max="1000" step="1" class="form-control" id="depth" style="-webkit-appearance: auto;" required>
+								<span class="input-group-text">cm</span>
+								<div class="invalid-feedback" id="depthval">
+									Proszę wprowadzić liczbę większą od 0, maksymalnie 1000.
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+					<div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3" style="margin-top: 20px;">
+						<button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" onclick="walidacja()">Confirm</button>
+						<button type="reset" class="btn btn-outline-secondary btn-lg px-4" style="background-color: gray; color: white;" onclick="clearmsg()">Clear</button>
+					</div>
+					<div id="testowy">
+						
+					</div>
+					<hr class="my-4">
+				</form>
+				<h1>Packages</h1>
+				<table class="table table-sm" id="myTable">
+					<thead style="border-bottom: solid;">
+						<tr>
+							<th scope="col" style="width: 50%;">Name</th>
+							<th scope="col">Width</th>
+							<th scope="col">Length</th>
+							<th scope="col">Depth</th>
+							<th scope="col">Volume</th>
+						</tr>
+					</thead>
+					<tbody id="mybody">
+					</tbody>
+					<tfoot style="border-top: solid;">
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td id="sumvolume">0</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</main>
+  </body>
+</html>
