@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  background:#d2eaf1;
+}
+
+.boundvalue {
+	float: left;
+	width: 25px;
+}
+
+/* https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+.slidecontainer {
+	width: 200px; /* Width of the outside container */
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+.slider {
+	width: 100%;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slideandvalues {
+	width: 290px;
+	height: 25px;
+	margin: 0;
+}
+
+.circle-wrap {
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle {
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  background: #000
+}
+
