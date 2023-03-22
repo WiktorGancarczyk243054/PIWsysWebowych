@@ -31,16 +31,6 @@ body {
 	margin: 0;
 }
 
-.circle-wrap {
-  margin-left: 25px;
-  margin-top: 25px;
-  width: 150px;
-  height: 150px;
-  background: #fefcff;
-  border-radius: 50%;
-  border: 1px solid #cdcbd0;
-}
-
 .circle {
   margin-left: 25px;
   margin-top: 25px;
